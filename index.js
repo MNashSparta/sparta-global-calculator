@@ -37,6 +37,9 @@ if(calcType == 1){
         console.log(input1 % input2);
         break;
 
+      default:
+        calculator = confirm("That was silly. Do you wish to exit?");
+
     }
   } else {
 
@@ -50,7 +53,11 @@ if(calcType == 1){
         // Root
         case 2:
           console.log(Math.pow(input1, 1/input2))
+
+        default:
+          calculator = confirm("That was silly. Do you wish to exit?");
       }
+
   }
 } else if (calcType == 2) {
   // BMI Calc
@@ -96,7 +103,7 @@ if(calcType == 1){
   console.log("The trip will take " + tripLength + " hours and cost £" + tripCost + ".");
 
 } else {
-calculator = confirm("That was silly. Do you wish to exit?")
+calculator = confirm("That was silly. Do you wish to exit?");
 }
 
 }
