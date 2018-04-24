@@ -1,3 +1,6 @@
+calculator = false;
+
+while(!calculator){
 var calcType = prompt("Which calculator would you like to use? 1. Maths  2. BMI  3. Trip")
 if(calcType == 1){
   // Maths calculator
@@ -93,5 +96,7 @@ if(calcType == 1){
   console.log("The trip will take " + tripLength + " hours and cost £" + tripCost + ".");
 
 } else {
-prompt("That was silly")
+calculator = confirm("That was silly. Do you wish to exit?")
+}
+
 }
